@@ -1,0 +1,204 @@
+:root{
+
+  /*      Theme colors        */
+  --light-color: #3f4954;
+  --text-light : #686666da;
+  --dark-color: #0f0f0f;
+  --white: #ffffff;
+  --midnight: #104f55;
+  --primary-color :#047aed;
+  --secondary-color:#1c3fa8;
+  --error:#d9534f;
+  --success-color:#5cb85c;
+
+
+  /* gradient color   */
+  /*--sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);*/
+
+  /*      theme font-family   */
+  --Abel: 'Abel', cursive;
+  --Anton: 'Anton', cursive;
+  --Josefin : 'Josefin', cursive;
+  --Lexend: 'Lexend', cursive;
+  --Livvic : 'Livvic', cursive;
+
+}
+
+body {
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+.donate_wrapper{
+  margin: 15px;
+  margin: 0 5vw;
+}
+
+.donate_title p{
+  font-family: "Candal", serif;
+  color: #0a0a0ade;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 10px -16px;
+}
+.col-25 a{
+
+text-decoration: none;
+
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.containerdonate {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+/* uppercase was here */
+.row input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-containerdonate {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+.text_color1{
+  color: #C1D82F;
+
+}
+.text_color2{
+  color: #2196F3;
+  
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+span.chk {
+  /*float: right;*/
+   position: absolute;
+  left: 80px;
+  color: grey;
+}
+
+/*checks*/
+/*.checkboxes {
+  position: absolute;
+  top: 242px;
+  left: 13px;
+}
+
+.checkboxes label {
+  position: relative;
+  top: -8px;
+  font-size: 13px;
+  color: gray;
+}*/
+
+.checkbox {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #C1D82F;
+  padding: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+
+.checkbox:active, .checkbox:checked:active {
+  
+}
+
+.checkbox:checked {
+  background-color: #C1D82F;
+  border: 1px solid #C1D82F;
+  color: white;
+}
+
+.checkbox:checked:after {
+  content: '\2714';
+  font-size: 14px;
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  color: white;
+}
+
+/*checks*/
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
