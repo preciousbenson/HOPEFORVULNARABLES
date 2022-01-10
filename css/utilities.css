@@ -19,6 +19,19 @@
     background: transparent;
     border: 1px #fff solid;
 }
+.btn_outline2{
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    /*background: transparent;*/
+    border: 1px #fff solid;
+}
 .flex {
 	display: flex;
 	justify-content: center;
